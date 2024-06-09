@@ -1,3 +1,30 @@
 body {
-    font-size: 18;
+    font-family: sans-serif;
+    font-size: 20px;
 }
+
+header, footer {
+    background-color:#ebb6ab;
+}
+
+.site-title {
+    color: #43130b;
+}
+
+#my-image {
+    box-shadow: 1px 1px 2px #000;
+}
+
+ol.hobbie {list-style-type: square;}
+
+ol.hobbie :nth-child(odd) {
+    background: #e5d2a8;
+}
+
+a {
+    text-decoration: none; background-color: rgba(242, 127, 147, 0.5); border: 2px solid #43130b;
+}
+
+a:hover {
+    background-color: #ff2600; border: 2px solid #146d00;
+  }
