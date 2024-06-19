@@ -1,3 +1,29 @@
+/* define overall text style and background color */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #aad4cf;
+    display: block;
+    margin: 8px;
+}
+
 .wrapper {
-    width: 70vw;
-    }
+    width: 1024px;
+    margin: 0px 200px auto;
+    background-color: #d4e9e7;
+}
+
+h1{
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    text-align: center; 
+    size: ; 
+  }
+  .container{
+    position: relative;
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+  img{
+    width: 100%;
+  }
