@@ -27,7 +27,7 @@ h1{
 }
 
 .container{
-    color: white;
+    color: black;
     font-weight: 400;
     font-size: 60px; 
     position: relative;
@@ -41,9 +41,12 @@ img{
 
 /* set style of the top list */
 .top-list {
+    font-weight: 100;
+    font-size: 20px;
     margin-left: auto;
     margin-right: auto;
     list-style-type: none;
+    padding-bottom: 30px;
 }
   
 li {
@@ -52,12 +55,32 @@ li {
   
 li a {
     display: inline-block;
-    color: white;
+    color: black;
     text-align: center;
-    padding: 0 137px;
+    padding: 0 130px;
     text-decoration: none;
 }
 
 .top-list :nth-child(2) {
     border-inline: 1px solid black;
 }
+
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* setup second starfish close up picture */
+#starfish-closeup {
+    height: 257px;
+    width: 250px;
+    float: left;
+    padding: 5px;
+}
+
+h2 {
+    font-weight: 10;
+    font-size: 25px;
+}
+
