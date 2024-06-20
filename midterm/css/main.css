@@ -18,22 +18,46 @@ body {
     background-color: #d4e9e7;
 }
 
+/* overlapping header to the background picture */
 h1{
-    color: white;
     position: absolute;
     top: 200px;
     width: 100%;
     text-align: center; 
-  }
+}
 
 .container{
+    color: white;
     font-weight: 400;
     font-size: 60px; 
     position: relative;
     max-width: 1024px;
     margin: 0 auto;
-  }
+}
 
 img{
     width: 100%;
-  }
+}
+
+/* set style of the top list */
+.top-list {
+    margin-left: auto;
+    margin-right: auto;
+    list-style-type: none;
+}
+  
+li {
+    float:left;
+}
+  
+li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 0 137px;
+    text-decoration: none;
+}
+
+.top-list :nth-child(2) {
+    border-inline: 1px solid black;
+}
