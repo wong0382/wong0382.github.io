@@ -140,11 +140,12 @@ h3{
     margin-bottom: 23px;
 }
 
+/* enlarge the input box */
 .biggest input{
     height: 100px;
-    align: top;
 }
 
+/* radio input style setup */
 .radio input{
     margin-top: 13px;
     margin-bottom: 23px;
