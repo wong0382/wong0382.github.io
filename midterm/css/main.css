@@ -29,23 +29,22 @@ body {
 }
 
 /* overlapping header to the background picture */
-h1{
+h1 {
     position: absolute;
     top: 200px;
     width: 100%;
     text-align: center; 
 }
 
-.container{
+.container {
     color: rgb(255, 255, 255);
     font-weight: 300;
-    font-size: 50px; 
     position: relative;
     max-width: 1024px;
     margin: 0 auto;
 }
 
-img{
+img {
     width: 100%;
 }
 
@@ -70,7 +69,7 @@ a:visited {
     color: black;
   }
 
-.top-list :nth-child(2) {
+.top-list li:nth-child(2) {
     border-inline: 1px solid black;
 }
 
@@ -106,3 +105,64 @@ p {
 }
 
 /* style the second ul */
+.facts {
+    padding: 30px 0px 15px 10px;
+}
+
+h3{
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+
+.facts li{
+    padding-left: 2px;
+    font-size: 16px;
+    list-style: inside;
+    line-height: 1;
+}
+
+/* style contact form */
+
+#contact {
+    padding: 15px 10px 15px 10px;
+}
+
+.box {
+    padding: 36px 8px 18px 10px;
+    border: 1px solid #111;
+}
+
+.type input {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    margin-top: 13px;
+    margin-bottom: 23px;
+}
+
+.biggest input{
+    height: 100px;
+    align: top;
+}
+
+.radio input{
+    margin-top: 13px;
+    margin-bottom: 23px;
+}
+
+h4{
+    font-size: 24px;
+    padding-bottom: 10px;
+}
+
+button {
+    background-color: #d4e9e7;
+    padding: 14px 12px;
+    border: 1px solid #111;
+}
+
+footer {
+    text-align: right;
+    padding-top: 36px;
+    padding-right: 20px;
+}
