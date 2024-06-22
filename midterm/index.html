@@ -44,34 +44,33 @@
         <div id="contact">
             <h3>Contact to learn more</h3>
             <div class="box clearfix">
-                <form action="contact.html" method="post" class="type">
-                    <label for="name">Your Name</label>
-                    <input id="name" type="text" name="name">
-                </form>
-                <form action="contact.html" method="post" class="type">
-                    <label for="email">Your Email</label>
-                    <input id="email" type="email" name="email">
-                </form>
-                <form action="contact.html" method="post" class="type biggest">
-                    <label for="message">Your Message</label>
-                    <input id="message" type="text" name="message">
-                </form>
-                <h4>Would you like to visit the starfish?</h4>
-                    <form action="contact.html" method="post" class="radio">
-                        <label for="yes">Yes</label>
-                        <input type="radio" id="yes" name="visit" value="yes">
-                        <label for="no">No</label>
-                        <input type="radio" id="no" name="visit" value="no">
-                        <label for="maybe">Maybe</label>
-                        <input type="radio" id="maybe" name="visit" value="maybe">
+                <form method="get">
+                    <div class="type">
+                        <label for="name">Your Name</label>
+                        <input id="name" type="text" name="name">
+                        <label for="email">Your Email</label>
+                        <input id="email" type="email" name="email">
+                    </div>
+                    <div class="type biggest">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" type="text" name="message"></textarea>
+                    </div>
+                    <h4>Would you like to visit the starfish?</h4>
+                        <div class="radio">
+                            <label for="yes">Yes</label>
+                            <input type="radio" id="yes" name="visit" value="yes">
+                            <label for="no">No</label>
+                            <input type="radio" id="no" name="visit" value="no">
+                            <label for="maybe">Maybe</label>
+                            <input type="radio" id="maybe" name="visit" value="maybe">
+                        </div>
                     </form>
                 <button type="submit">SEND</button>
             </div>
         </div>
+        <footer>
+            <p>© Lone Starfish.</p>
+        </footer>
     </div>
-    <footer>
-        <p>© Lone Starfish.</p>
-    </footer>
-      
 </body>
 </html>

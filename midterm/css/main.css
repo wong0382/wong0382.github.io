@@ -55,13 +55,14 @@ img {
     font-weight: 200;
     text-align: center;
 }
-.top-list li{
+.top-list li {
+    color: black;
     display: inline-block;
     width: 336px;
     margin: 3px 0px;
 }
 
-.top-list a{
+.top-list a {
     text-decoration: none;
 }
 
@@ -141,8 +142,12 @@ h3{
 }
 
 /* enlarge the input box */
-.biggest input{
+.biggest textarea{
+    margin-top: 13px;
+    margin-bottom: 23px;
+    box-sizing: border-box;
     height: 100px;
+    width: 100%;
 }
 
 /* radio input style setup */
@@ -166,4 +171,5 @@ footer {
     text-align: right;
     padding-top: 36px;
     padding-right: 20px;
+    padding-bottom: 40px;
 }
