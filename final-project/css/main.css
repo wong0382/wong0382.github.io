@@ -558,37 +558,120 @@ h1 {
         object-fit: cover;
     }
 
+    /* about */
+    .about {
+        width:auto;
+        padding: 0px;
+        margin: 0px auto;
+    }
 
+    .about .wrapper {
+        width: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 10px 100px;
+        margin: 0px auto;
+    }    
 
+    .about-img {
+        height: auto;
+    }
 
-}
+    .about h2 {
+        font-size: 30px;
+        margin-top: 5px;
+        margin-bottom: 0px;
+    }
 
+    .about-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 
-/* about */
-.about div {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    border-bottom: 20;
-    background-color: #ffe6ac;
-    color: #222;
-}
+    /* Services */
+    .services {
+        margin: 10px 100px;
+    }
 
-.about .wrapper h2, p {
-    margin-left: 10px;
-}
+    .services .wrapper {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 
+        "two two two three three three"
+        "four four five five six six"
+    }
 
-.about .wrapper p {
-    font-size: 14px;
-}
+    .services h2 {
+        font-size: 30px;
+        grid-area: one;
+        color: #222;
+    }
 
-.about .wrapper p :nth-child(2) {
-    color: #c78c06;
-}
+    .digital-transformation {grid-area: two;}
+    .marketing {grid-area: three;}
+    .video-production {grid-area: four;}
+    .web-development {grid-area: five;}
+    .print {grid-area: six;}
+    
+    /* Our vision */
+    .our-vision {
+        height: 250px;
+    }
 
-.about-img {
-    width: 100%;
-    display: block;
-    margin: 0;
-    padding: 0;
+    .our-vision img {
+        width: 100%;
+    }
+
+    .our-vision .wrapper {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+   
+    .our-vision .wrapper h4 {
+        font-size: 40px;
+    }
+
+    .our-vision .wrapper button {
+        font-size: 30px;
+        padding: 30px 40px;
+    }
+
+    /* Our team */
+    .our-team {
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-bottom: 0px;
+    }
+
+    .our-team h2 {
+        font-size: 50px;
+    }
+
+    /* John */
+    .john img {
+        float: left;
+        width: 50%;
+        margin-right: 10px;
+    }
+
+    /* Bob */
+    .bob img {
+        float: right;
+        width: 50%;
+        margin-left: 10px;
+    }
+
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    .our-team h5 {
+        font-size: 30px;
+    }
+
+    
 }
