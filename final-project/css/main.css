@@ -386,19 +386,20 @@ h1 {
     margin-bottom: 0px;
 }
 
-.contact-us h5 {
+/* message */
+.message h5 {
     font-size: 25px;
     margin-top: 10px;
     margin-bottom: 5px;
 }
 
-.contact-us p {
+.message p {
     font-size: 12px;
     padding: 0px;
     margin: 0px;
 }
 
-.contact-us input {
+.message input {
     width: 100%;
     padding: 5px;
     box-sizing: border-box;
@@ -408,7 +409,7 @@ h1 {
     border-radius: 2px;
 }
 
-.contact-us textarea{
+.message textarea{
     margin-top: 2px;
     margin-bottom: 5px;
     box-sizing: border-box;
@@ -418,7 +419,7 @@ h1 {
     border-radius: 2px;
 }
 
-.contact-us button {
+.message button {
     font-size: 20px;
     padding: 5px;
     margin-top: 10px;
@@ -673,5 +674,48 @@ h1 {
         font-size: 30px;
     }
 
-    
+    .our-team h6 {
+        font-size: 15px;
+    }
+
+    .our-team p {
+        margin-top: 10px;
+    }
+
+    /* contcat us */
+    .contact-us {
+        margin-left: 100px;
+        margin-right: 100px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100px 1fr 160px;
+        grid-template-areas:
+        "text text" 
+        "one three"
+        "two two";
+        align-items: start;
+        }
+
+    .contact-us h2 {
+        grid-area: text;
+    }
+
+    .message {
+        width: 100%;
+        grid-area: one;
+    }
+    .hours-of-operation {
+        margin-top: 0px;
+        grid-area: two;
+        width: 100%;
+    }
+    .location {
+        width: 100%;
+        grid-area: three;
+    }
+
+    /* footer */
+    .footer p{
+        margin-left: 100px;
+    }
 }
