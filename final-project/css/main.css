@@ -1,0 +1,172 @@
+/* General Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    background-color: #222;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #222;
+}
+
+/* Header */
+header {
+    background-color: #222;
+}
+
+header .header {
+    background-color: #c78c06;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.logo {
+    margin-left: 0;
+    text-align: left;
+    width: 50px;
+    height: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    margin: 0px 5px;
+    padding: 0;
+    border: 0;
+    color: #c78c06;
+}
+
+nav ul :nth-child(1) {
+    color: #222;
+    background-color: #c78c06;
+    margin: 0;
+}
+
+li {
+    margin: 20px 0px;
+    padding: 0;
+    border: 0;
+}
+
+/* Search bar styles */
+.search {
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.search form {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.search input[type="text"] {
+    padding: 10px;
+    width: 85%;
+    outline: none;
+}
+
+.search button {
+    padding: 10px;
+    border-width: 1px;
+    border-color: #c78c06;
+    background-color: #222;
+    color: #c78c06;
+}
+
+/* welcome message */
+.welcome {
+    max-width: 1200px;
+}
+
+.black-box {
+    position: absolute;
+    top: 400px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent black background */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin:0px 10px;
+    width: 100%;
+    font-size: 55px;
+    text-align:left; 
+}
+
+.welcome p {
+    margin:0px 10px;
+    width: 100%;
+    font-size: 12px;
+    text-align:left; 
+}
+
+.welcome button {
+    margin:0px 10px;
+    font-size: 18px;
+    text-align:left; 
+    background-color: #c78c06;
+}
+
+.main-banner {
+    width: 105%;
+}
+
+
+
+/* .search {
+    width: 100%;
+    position: relative;
+    display: flex;
+    margin: 0;
+    height: 30px;
+    line-height: 30px;
+}
+
+.search input {
+    display: inline-flex;
+    border: none;
+    outline: none;
+    background: #fff;
+    width: 100%;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.search button {
+    display: inline-block;
+    padding: 5px 5px;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: #c78c06;
+    background-color: #222;
+    color: #c78c06;
+} */
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 760px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
