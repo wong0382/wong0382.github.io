@@ -9,7 +9,6 @@ body {
 }
 
 .wrapper {
-    /* width: 670px; */
     margin: 0 auto;
     background-color: #222;
     align-items: center;
@@ -19,16 +18,13 @@ body {
 header {
     width: 100%;
     background-color: #222;
+    font-size: 16px;
 }
 
 header .header {
     background-color: #c78c06;
     width: 100%;
     padding-top: 5px;
-    padding-bottom: 20px;
-    margin-top: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
 }
 
 .logo {
@@ -64,7 +60,7 @@ li {
 .search {
     margin-top: 20px;
     margin-bottom: 0px;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
     text-align: center;
     width: 100%;
 }
@@ -91,12 +87,14 @@ li {
 /* welcome message */
 .welcome {
     width: 100%;
+    margin: 0px;
+    padding: 0px;
 }
 
 .black-box {
     position: absolute;
-    top: 450px;
-    background-color: rgba(0, 0, 0, 0.5); /* Transparent black background */
+    top: 420px;
+    background-color: rgba(0, 0, 0, 0.5);
     color: white;
     padding: 20px;
     text-align: left;
@@ -105,21 +103,20 @@ li {
 h1 {
     margin:0px;
     width: 100%;
-    font-size: 55px;
+    font-size: 70px;
     text-align:left; 
 }
 
 .welcome p {
     margin:0px;
-    /* width: 100%; */
-    font-size: 12px;
+    font-size: 14px;
     text-align:left; 
 }
 
 .welcome button {
     margin:20px 0px;
-    padding:20px;
-    font-size: 18px;
+    padding: 30px;px 20px;
+    font-size: 20px;
     text-align:left; 
     background-color: #c78c06;
     border: none;
@@ -145,6 +142,10 @@ h1 {
     margin-left: 10px;
 }
 
+.about .wrapper h2 {
+    font-size: 45px;
+}
+
 .about .wrapper p {
     font-size: 14px;
 }
@@ -164,125 +165,50 @@ h1 {
 .services div {
     margin-top: 0;
     padding-top: 0;
-    margin-bottom: 20;
-    padding-bottom: 20;
-    border-bottom: 20;
     background-color: #fff;
     color: #222;
 }
 
-.services .digital-transformation {
+.services h2 {
+    margin: auto 10px;
+    font-size: 45px;
+    color: #222;
+}
+
+.services h3 {
+    margin-left: 5px;
+    margin-bottom: 15px;
+    font-size: 32px;
+}
+
+.services p {
+    font-size: 12px;
+    margin-top: 0px;
+}
+
+.services img {
+    width: 100%;
+}
+
+.services .digital-transformation, .services .marketing, .services .video-production, .services .web-development, .services .print {
     background-color: #ffe6ac;
     padding: 0px;
     margin: 10px;
 }
 
-.services .digital-transformation img {
-    width: 100%;
-}
-
-.services .digital-transformation h3 {
+.services .digital-transformation button, .services .marketing button, .services .video-production button, .services .web-development button, .services .print button {
+    padding: 30px;
     margin-left: 10px;
-}
-
-.digital-transformation button {
-    padding: 10px;
-    margin-left: 10px;
+    margin-bottom: 15px;
     background-color: #222;
     color: #fff;
     border: none;
+    font-size: 21px;
 }
 
-/* Marketing */
-.services .marketing {
-    background-color: #ffe6ac;
-    padding: 0px;
-    margin: 10px;
-}
-
-.services .marketing img {
-    width: 100%;
-}
-
-.services .marketing h3 {
+.services .digital-transformation button i, .services .marketing button i, .services .video-production button i, .services .web-development button i, .services .print button i{
+    font-size: 30px;
     margin-left: 10px;
-}
-
-.marketing button {
-    padding: 10px;
-    margin-left: 10px;
-    background-color: #222;
-    color: #fff;
-    border: none;
-}
-
-/* Video Production */
-.services .video-production {
-    background-color: #ffe6ac;
-    padding: 0px;
-    margin: 10px;
-}
-
-.services .video-production img {
-    width: 100%;
-}
-
-.services .video-production h3 {
-    margin-left: 10px;
-}
-
-.video-production button {
-    padding: 10px;
-    margin-left: 10px;
-    background-color: #222;
-    color: #fff;
-    border: none;
-}
-
-/* Web Development */
-.services .web-development {
-    background-color: #ffe6ac;
-    padding: 0px;
-    margin: 10px;
-}
-
-.services .web-development img {
-    width: 100%;
-}
-
-.services .web-development h3 {
-    margin-left: 10px;
-}
-
-.web-development button {
-    padding: 10px;
-    margin-left: 10px;
-    background-color: #222;
-    color: #fff;
-    border: none;
-}
-
-/* Print */
-.services .print {
-    background-color: #ffe6ac;
-    padding: 0px;
-    margin: 10px;
-}
-
-.services .print img {
-    width: 100%;
-}
-
-.services .print h3 {
-    margin-left: 10px;
-}
-
-.print button {
-    padding: 10px;
-    margin-left: 10px;
-    background-color: #222;
-    color: #fff;
-    border: none;
 }
 
 /* Our vision */
@@ -290,40 +216,44 @@ h1 {
     position: relative;
     overflow: hidden;
     width: 100%;
-    height: 180px;
+    height: 265px;
     background: url('images/vision.jpg') center/cover no-repeat;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: left;
-    padding: 5px;
 }
 
 .our-vision .wrapper {
     position: absolute;
     top: 8px;
-    left: 5px;
+    left: 15px;
     background-color: transparent;
 }
 
 .our-vision .wrapper h4 {
-    font-size: 25px;
-    margin: 4px 0px;
+    font-size: 30px;
+    margin: 14px 0px;
 }
 
 .our-vision .wrapper p {
-    margin: 0;
-    font-size: 15px;
+    margin: 10px 0px;
+    font-size: 14px;
 }
 
 .our-vision .wrapper button {
-    font-size: 20px;
-    padding: 20px;
+    font-size: 22px;
+    padding: 30px;
     margin-top: 10px;
     background-color: #222;
     color: #fff;
     border: 1px solid #c78c06;
+}
+
+.our-vision .wrapper button i {
+    font-size: 30px;
+    margin-left: 10px;
 }
 
 /* Our Team */
@@ -331,6 +261,12 @@ h1 {
     background-color: #fff;
     color: #222;
 }
+
+.our-team h2 {
+    font-size: 45px;
+    margin: 10px;
+}
+
 /* John Doe's block*/
 .our-team .john {
     background-color: #ffe6ac;
@@ -352,12 +288,12 @@ h1 {
 }
 
 .our-team h5 {
-    font-size: 20px;
+    font-size: 30px;
     margin: 10px;
 }
 
 .our-team h6 {
-    font-size: 0px 0px 0px 10px;
+    font-size: 16px;
     margin: 0px 10px;
     padding-bottom: 0px;
 }
@@ -378,23 +314,24 @@ h1 {
 .contact-us {
     background-color: #fff;
     color: #222;
-    margin: 20px 10px;
+    margin: 50px 10px;
+    margin-bottom: 10px;
 }
 
 .contact-us h2 {
-    font-size: 35px;
+    font-size: 45px;
     margin-bottom: 0px;
 }
 
 /* message */
 .message h5 {
-    font-size: 25px;
+    font-size: 30px;
     margin-top: 10px;
     margin-bottom: 5px;
 }
 
 .message p {
-    font-size: 12px;
+    font-size: 14px;
     padding: 0px;
     margin: 0px;
 }
@@ -404,7 +341,7 @@ h1 {
     padding: 5px;
     box-sizing: border-box;
     margin-top: 2px;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
     border: 1px solid #b6b6b6;
     border-radius: 2px;
 }
@@ -432,18 +369,19 @@ h1 {
 .hours-of-operation {
     background-color: #fff;
     color: #222;
-    margin: 0px 10px;
+    margin: 0px;
 }
 
 .hours-of-operation h5 {
-    font-size: 20px;
-    margin-top: 5px;
+    font-size: 32px;
+    margin-top: 25px;
     margin-bottom: 5px;
 }
 
 .hours-of-operation table {
     border-collapse: collapse;
     width: 100%;
+    font-size: 14px;
 }
 
 .hours-of-operation th {
@@ -461,13 +399,14 @@ h1 {
 
 /* Location */
 .location {
+    margin-left: 0px;
+    margin-top: 20px;
     background-color: #fff;
     color: #222;
-    margin: 10px 10px;
 }
 
 .location h5 {
-    font-size: 20px;
+    font-size: 32px;
     padding: 0px;
     margin: 0px;
 }
@@ -490,11 +429,10 @@ h1 {
     color: #c78c06;
 }
 
-
 /* desktop view */
 @media screen and (min-width: 760px) {
     header {
-        padding: 5px 50px 0px 50px;
+        padding: 30px 112px 30px 112px;
         width: auto;
         font-size: 14px;
     }
@@ -508,7 +446,8 @@ h1 {
     }
     
     .header .logo {
-        max-height: 60px; 
+        max-height: 85px; 
+        margin-right: 20px;
     }
 
     nav.wrapper {
@@ -532,31 +471,38 @@ h1 {
     }
       
     nav ul li:first-child {
-        padding: 10px 10px;
+        padding: 14px 0px;
     }
     
     .search {
         display: flex;
         align-items: center;
         margin-left: auto;
-        width: 200px; 
+        width: 184px; 
+        height: 40px;
         }
     
     /* welcome message */
     .welcome {
         width: 100%;
+        height: 500px;
     }
 
     .black-box {
         position: absolute;
-        top: 50px;
+        top: 150px;
         margin: 80px;
     }
 
     .main-banner {
         width: 100%; 
-        height: 400px; 
+        height: 500px; 
         object-fit: cover;
+    }
+
+    .welcome i {
+        font-size: 30px;
+        margin-left: 10px;
     }
 
     /* about */
@@ -592,7 +538,8 @@ h1 {
 
     /* Services */
     .services {
-        margin: 10px 100px;
+        margin: 40px 100px;
+        margin-bottom: 0px;
     }
 
     .services .wrapper {
@@ -605,9 +552,13 @@ h1 {
     }
 
     .services h2 {
-        font-size: 30px;
+        font-size: 48px;
         grid-area: one;
         color: #222;
+    }
+
+    .services h3 {
+        font-size: 32px;
     }
 
     .digital-transformation {grid-area: two;}
@@ -615,7 +566,16 @@ h1 {
     .video-production {grid-area: four;}
     .web-development {grid-area: five;}
     .print {grid-area: six;}
-    
+
+    .services .digital-transformation button, .services .marketing button, .services .video-production button, .services .web-development button, .services .print button {
+        display: block;
+        margin: 0px;
+        width: 100%;
+        /* margin-block: 10px; */
+        margin-block-start: 10px;
+        margin-block-end: 10px;
+    }
+
     /* Our vision */
     .our-vision {
         height: 250px;
@@ -631,12 +591,16 @@ h1 {
     }
    
     .our-vision .wrapper h4 {
-        font-size: 40px;
+        font-size: 30px;
+    }
+
+    .our-vision .wrapper p {
+        font-size: 14px;
     }
 
     .our-vision .wrapper button {
-        font-size: 30px;
-        padding: 30px 40px;
+        font-size: 20px;
+        padding: 30px 20px;
     }
 
     /* Our team */
@@ -650,7 +614,21 @@ h1 {
         font-size: 50px;
     }
 
+    .our-team h5 {
+        padding-top: 10px;
+        font-size: 50px;
+    }
+
+    .divider {
+        border-top: 2px solid #c78c06;
+    }
+
     /* John */
+    div .john {
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+
     .john img {
         float: left;
         width: 50%;
@@ -658,6 +636,11 @@ h1 {
     }
 
     /* Bob */
+    div .bob {
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+
     .bob img {
         float: right;
         width: 50%;
@@ -686,6 +669,7 @@ h1 {
     .contact-us {
         margin-left: 100px;
         margin-right: 100px;
+        margin-bottom: 50px;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 100px 1fr 160px;
