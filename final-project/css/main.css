@@ -25,7 +25,7 @@ header .header {
     padding-top: 5px;
 }
 
-.logo {
+.header .logo {
     margin-left: 0;
     text-align: left;
     height: auto;
@@ -33,7 +33,7 @@ header .header {
 
 nav ul {
     width: 100%;
-    list-style-type: none;
+    list-style: none;
     text-align: center;
     margin: 0px;
     padding: 0px;
@@ -265,20 +265,6 @@ h1 {
     margin: 10px;
 }
 
-/* John Doe's block*/
-.our-team .john {
-    background-color: #ffe6ac;
-    padding: 0px;
-    margin: 10px;
-}
-
-/* Bob Rite's block*/
-.our-team .bob {
-    background-color: #ffe6ac;
-    padding: 0px;
-    margin: 10px;
-}
-
 .our-team img {
     width: 100%;
     margin: 0px;
@@ -306,6 +292,20 @@ h1 {
     font-size: 14px;
     margin-top: 0px;
     padding-bottom: 20px;
+}
+
+/* John Doe's block*/
+.our-team .john {
+    background-color: #ffe6ac;
+    padding: 0px;
+    margin: 10px;
+}
+
+/* Bob Rite's block*/
+.our-team .bob {
+    background-color: #ffe6ac;
+    padding: 0px;
+    margin: 10px;
 }
 
 /* Contact US */
@@ -459,9 +459,7 @@ h1 {
     nav ul {
         display: flex;
         align-items: center;
-        list-style: none;
-        margin: 0;
-        padding: 0;
+
     }
     
     nav ul li {
@@ -482,18 +480,15 @@ h1 {
     
     /* welcome message */
     .welcome {
-        width: 100%;
         height: 500px;
     }
 
     .black-box {
-        position: absolute;
         top: 150px;
         margin: 80px;
     }
 
     .main-banner {
-        width: 100%; 
         height: 500px; 
         object-fit: cover;
     }
@@ -505,8 +500,7 @@ h1 {
 
     /* about */
     .about {
-        width:auto;
-        padding: 0px;
+        width: auto;
         margin: 0px auto;
     }
 
@@ -552,11 +546,14 @@ h1 {
     .services h2 {
         font-size: 48px;
         grid-area: one;
-        color: #222;
     }
 
     .services h3 {
         font-size: 32px;
+    }
+
+    .services p {
+        margin-right: 5px;
     }
 
     .digital-transformation {grid-area: two;}
@@ -569,7 +566,6 @@ h1 {
         display: block;
         margin: 0px;
         width: 100%;
-        /* margin-block: 10px; */
         margin-block-start: 10px;
         margin-block-end: 10px;
     }
@@ -588,14 +584,6 @@ h1 {
         margin-right: 100px;
     }
    
-    .our-vision .wrapper h4 {
-        font-size: 30px;
-    }
-
-    .our-vision .wrapper p {
-        font-size: 14px;
-    }
-
     .our-vision .wrapper button {
         font-size: 20px;
         padding: 30px 20px;
@@ -614,19 +602,17 @@ h1 {
 
     .our-team h5 {
         padding-top: 10px;
-        font-size: 50px;
     }
 
-    .divider {
-        border-top: 2px solid #c78c06;
+    .our-team h6 {
+        font-size: 15px;
+    }
+
+    .our-team p {
+        margin-top: 10px;
     }
 
     /* John */
-    div .john {
-        margin-bottom: 0px;
-        padding-bottom: 0px;
-    }
-
     .john img {
         float: left;
         width: 50%;
@@ -634,9 +620,8 @@ h1 {
     }
 
     /* Bob */
-    div .bob {
-        margin-top: 0px;
-        padding-top: 0px;
+    .our-team .bob {
+        margin-top: -10px;
     }
 
     .bob img {
@@ -649,18 +634,6 @@ h1 {
         content: "";
         clear: both;
         display: table;
-    }
-
-    .our-team h5 {
-        font-size: 30px;
-    }
-
-    .our-team h6 {
-        font-size: 15px;
-    }
-
-    .our-team p {
-        margin-top: 10px;
     }
 
     /* contcat us */
