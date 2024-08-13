@@ -115,7 +115,7 @@ h1 {
 
 .welcome button {
     margin:20px 0px;
-    padding: 30px;px 20px;
+    padding: 25px 20px;
     font-size: 20px;
     text-align:left; 
     background-color: #c78c06;
@@ -133,7 +133,7 @@ h1 {
     width: 100%;
     margin: 0;
     padding: 0;
-    border-bottom: 20;
+    border-bottom: 20px;
     background-color: #ffe6ac;
     color: #222;
 }
